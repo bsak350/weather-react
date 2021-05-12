@@ -31,3 +31,8 @@
   position: relative;
   bottom: 65px;
 }
+
+.Weather img {
+  position: relative;
+  bottom: 24px;
+}
