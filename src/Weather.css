@@ -23,11 +23,11 @@
   text-align: left;
   text-transform: capitalize;
   position: relative;
-  bottom: 26px;
+  bottom: 65px;
   line-height: normal;
 }
 
 .Weather .date {
   position: relative;
-  bottom: 30px;
+  bottom: 65px;
 }

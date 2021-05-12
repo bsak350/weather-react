@@ -4,15 +4,33 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather() {
-  let weatherData = {
-    city: "Las Vegas",
-    temperature: 75,
-    date: "Thursday 09:00",
-    description: "Clear",
-    imgUrl: "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
-    humidity: 0,
-    wind: 5,
-  };
+  const [city, setCity] = useState("");
+  const [weather, setWeather] = useState({});
+
+  function displayWeather(response) {
+    setWeather({
+      temperature: Math.round(response.data.main.temp),
+      date: "Thursday 09:00",
+      description: response.data.weather[0].description,
+      icon: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      humidity: response.data.main.humidity,
+      wind: Math.round(response.data.wind.speed),
+    });
+  }
+
+  function handleSubmit(event) {
+    event.preventDefault();
+
+    let apiKey = "633a901d15239b95c1fd6a7642839e6b";
+    let units = "imperial";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
+
+    axios.get(apiUrl).then(displayWeather);
+  }
+
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
 
   return (
     <div className="Weather">
@@ -23,13 +41,14 @@ export default function Weather() {
         <div className="col-4">
           <div className="row g-3 align-items-center">
             <div className="col-auto">
-              <form>
+              <form onSubmit={handleSubmit}>
                 <input
                   type="search"
                   className="form-control"
                   placeholder="Enter City"
-                  autoFocus="on"
-                  autoComplete="off"
+                  autoFocus={true}
+                  autoComplete={false}
+                  onChange={updateCity}
                 />
                 <input
                   type="submit"
@@ -50,28 +69,28 @@ export default function Weather() {
       <h2>
         <div className="row">
           <div className="col-5">
-            <span className="city">{weatherData.city}</span>
+            <span className="city">{city}</span>
           </div>
           <div className="col-2">
             <div className="clearfix weather-temperature">
               <img
-                src={weatherData.imgUrl}
-                alt={weatherData.description}
+                src={weather.icon}
+                alt={weather.description}
                 className="float-left"
               />
             </div>
           </div>
           <div className="col-5">
-            <span className="temp">{weatherData.temperature}°F</span>
+            <span className="temp">{weather.temperature}°F</span>
           </div>
           <div className="col-8">
-            <span className="date">{weatherData.date}</span>
+            <span className="date">{weather.date}</span>
           </div>
           <div className="col-4"></div>
           <ul>
-            <li>{weatherData.description}</li>
-            <li>Humidity: {weatherData.humidity}%</li>
-            <li>Wind: {weatherData.wind} MPH</li>
+            <li>{weather.description}</li>
+            <li>Humidity: {weather.humidity}%</li>
+            <li>Wind: {weather.wind} MPH</li>
           </ul>
         </div>
       </h2>
