@@ -9,7 +9,11 @@ function App() {
     <div className="App">
       <Weather />
       <p>
-        <a href="https://github.com/bsak350/weather-react.git" target="_blank">
+        <a
+          href="https://github.com/bsak350/weather-react.git"
+          target="_blank"
+          rel="noreferrer"
+        >
           Open-source code
         </a>{" "}
         by Brittany Sak
