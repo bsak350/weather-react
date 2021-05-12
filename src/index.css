@@ -6,3 +6,8 @@
   border-radius: 8px;
   padding: 20px;
 }
+
+p {
+  text-align: center;
+  font-family: monospace;
+}
