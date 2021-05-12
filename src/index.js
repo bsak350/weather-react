@@ -8,6 +8,12 @@ function App() {
   return (
     <div className="App">
       <Weather />
+      <p>
+        <a href="https://github.com/bsak350/weather-react.git" target="_blank">
+          Open-source code
+        </a>{" "}
+        by Brittany Sak
+      </p>
     </div>
   );
 }
