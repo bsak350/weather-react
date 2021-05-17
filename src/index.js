@@ -21,9 +21,9 @@ export default function App() {
           >
             Open-sourced on Github
           </a>{" "}
-          and
+          and{" "}
           <a
-            href="https://pensive-feynman-61d550.netlify.app"
+            href="https://app.netlify.com/sites/pensive-feynman-61d550/deploys"
             target="_blank"
             rel="noopener noreferrer"
           >
