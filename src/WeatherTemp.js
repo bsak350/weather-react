@@ -14,7 +14,7 @@ export default function WeatherTemp(props) {
   }
 
   function celsius() {
-    return props.imperial - 32 * (5 / 9);
+    return (props.imperial - 32) * (5 / 9);
   }
 
   if (unit === "imperial") {
@@ -22,9 +22,10 @@ export default function WeatherTemp(props) {
       <div className="WeatherTemp">
         <span className="temp">{props.imperial}</span>
         <span className="unit">
-          °F |{" "}
+          {" "}
+          °F | °
           <a href="/" onClick={convertToCelsius}>
-            °C
+            C
           </a>
         </span>
       </div>
@@ -34,8 +35,10 @@ export default function WeatherTemp(props) {
       <div className="WeatherTemp">
         <span className="temp">{Math.round(celsius())}</span>
         <span className="unit">
+          {" "}
+          °
           <a href="/" onClick={convertToFahrenheit}>
-            °F
+            F
           </a>{" "}
           | °C
         </span>
