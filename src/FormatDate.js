@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FormattedDate(props) {
+export default function FormatDate(props) {
   let days = [
     "Sunday",
     "Monday",
@@ -10,7 +10,7 @@ export default function FormattedDate(props) {
     "Friday",
     "Saturday",
   ];
-  let day = days[props.date.getDay()];
+  let day = days[props.date.getDay(props)];
   let hours = props.date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
