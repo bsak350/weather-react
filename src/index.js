@@ -5,21 +5,22 @@ import Weather from "./Weather";
 
 import "./index.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
-        <p>
+        <Weather defaultCity="Las Vegas" />
+
+        <footer>
           <a
             href="https://github.com/bsak350/weather-react.git"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
           >
             Open-source code
           </a>{" "}
           by Brittany Sak
-        </p>
+        </footer>
       </div>
     </div>
   );
