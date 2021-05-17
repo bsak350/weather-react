@@ -1,5 +1,6 @@
 import React from "react";
 import FormatDate from "./FormatDate";
+import WeatherTemp from "./WeatherTemp";
 
 export default function WeatherInfo(props) {
   return (
@@ -18,7 +19,7 @@ export default function WeatherInfo(props) {
           </div>
         </div>
         <div className="col-5">
-          <span className="temp">{props.data.temperature}°F</span>
+          <WeatherTemp imperial={props.data.temperature} />
         </div>
         <div className="col-8">
           <span className="date">

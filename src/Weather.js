@@ -31,7 +31,7 @@ export default function Weather(props) {
   }
 
   function search() {
-    let apiKey = "633a901d15239b95c1fd6a7642839e6b";
+    let apiKey = "2971820c69674a00ce5e2260764d0588";
     let units = "imperial";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
