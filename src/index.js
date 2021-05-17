@@ -12,14 +12,23 @@ export default function App() {
         <Weather defaultCity="Las Vegas" />
 
         <footer>
+          Project coded by Brittany Sak
+          <br />
           <a
             href="https://github.com/bsak350/weather-react.git"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open-source code
+            Open-sourced on Github
           </a>{" "}
-          by Brittany Sak
+          and
+          <a
+            href="https://pensive-feynman-61d550.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hosted by Netlify
+          </a>
         </footer>
       </div>
     </div>
