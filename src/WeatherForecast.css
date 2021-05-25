@@ -1,8 +1,29 @@
 .WeatherForecast {
   text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 22px;
 }
 
 .WeatherForecast-temp-min {
-  opacity: 0.6;
   margin-left: 5px;
+  color: rgb(136, 17, 160);
+}
+
+.WeatherForecast-temp-max {
+  color: darkblue;
+}
+
+.WeatherForecast-temperatures {
+  position: relative;
+  bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.WeatherForecast-day {
+  color: darkblue;
+  font-weight: bold;
+}
+
+.WeatherForecast-icon {
+  margin-top: 20px;
 }
