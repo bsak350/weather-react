@@ -4,7 +4,9 @@ import React from "react";
 import "./WeatherForecast.css";
 
 export default function WeatherForecast(props) {
-  function handleResponse(response) {}
+  function handleResponse(response) {
+    console.log(response.data);
+  }
 
   let apiKey = "c6ae7a266fd79d65419f44e508f65fae";
   let longitude = props.coord.lon;
