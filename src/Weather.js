@@ -44,10 +44,10 @@ export default function Weather(props) {
     return (
       <div className="Weather">
         <div className="row header">
-          <div className="col-4">
+          <div className="col-6">
             <h1>Weather App</h1>
           </div>
-          <div className="col-4">
+          <div className="col-6">
             <div className="row g-3 align-items-center">
               <div className="col-auto">
                 <form onSubmit={handleSubmit}>
@@ -67,11 +67,6 @@ export default function Weather(props) {
                 </form>
               </div>
             </div>
-          </div>
-          <div className="col-4">
-            <button type="button" className="btn btn-primary">
-              Current Location
-            </button>
           </div>
         </div>
         <br />
