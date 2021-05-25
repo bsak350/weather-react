@@ -16,8 +16,8 @@
 .WeatherForecast-temperatures {
   position: relative;
   bottom: 20px;
-  font-weight: bold;
   margin-bottom: 80px;
+  font-weight: bold;
 }
 
 .WeatherForecast-day {
