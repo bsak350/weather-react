@@ -19,4 +19,9 @@
 .App footer {
   text-align: center;
   font-family: monospace;
+  color: darkblue;
+}
+
+.App .links {
+  color: rgb(136, 17, 160);
 }
