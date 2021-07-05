@@ -1,8 +1,17 @@
 .App {
   max-width: 900px;
   margin: 20px auto;
-  background: rgb(140, 202, 241);
-  border-radius: 2px solid rgb(140, 202, 241);
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(10, 174, 227) 0%,
+    rgb(124, 182, 255) 100.2%
+  );
+  border-radius: 2px solid
+    radial-gradient(
+      circle at 10% 20%,
+      rgb(10, 174, 227) 0%,
+      rgb(124, 182, 255) 100.2%
+    );
   border-radius: 8px;
   padding: 20px;
 }
