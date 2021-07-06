@@ -1,5 +1,5 @@
 .App {
-  max-width: 900px;
+  max-width: 960px;
   margin: 20px auto;
   background: radial-gradient(
     circle at 10% 20%,
@@ -17,6 +17,10 @@
   font-family: "Noto Sans", sans-serif;
 }
 
+.App .container {
+  max-width: 800px;
+}
+
 .App footer {
   text-align: center;
   font-family: monospace;
@@ -25,4 +29,10 @@
 
 .App .links {
   color: lightgreen;
+}
+
+@media (max-width: 900px) {
+  h2 {
+    text-align: left;
+  }
 }

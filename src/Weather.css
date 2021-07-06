@@ -39,3 +39,16 @@
 .btn-light {
   font-family: "Noto Sans", sans-serif;
 }
+
+@media (max-width: 560px) {
+  .Weather h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .Weather ul {
+    margin-left: 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+}
