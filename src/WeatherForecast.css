@@ -6,11 +6,11 @@
 
 .WeatherForecast-temp-min {
   margin-left: 5px;
-  color: lightcyan;
+  color: lightskyblue;
 }
 
 .WeatherForecast-temp-max {
-  color: lightskyblue;
+  color: lightcyan;
 }
 
 .WeatherForecast-temperatures {
@@ -21,7 +21,7 @@
 }
 
 .WeatherForecast-day {
-  color: white;
+  color: lightcyan;
   font-weight: bold;
 }
 

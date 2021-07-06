@@ -20,9 +20,9 @@
 .App footer {
   text-align: center;
   font-family: monospace;
-  color: white;
+  color: lightcyan;
 }
 
 .App .links {
-  color: lightgreen;
+  color: lightskyblue;
 }
