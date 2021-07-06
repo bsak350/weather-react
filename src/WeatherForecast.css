@@ -1,16 +1,16 @@
 .WeatherForecast {
   text-align: center;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   font-size: 24px;
 }
 
 .WeatherForecast-temp-min {
   margin-left: 5px;
-  color: rgb(136, 17, 160);
+  color: lightcyan;
 }
 
 .WeatherForecast-temp-max {
-  color: darkblue;
+  color: lightskyblue;
 }
 
 .WeatherForecast-temperatures {
@@ -21,7 +21,7 @@
 }
 
 .WeatherForecast-day {
-  color: darkblue;
+  color: white;
   font-weight: bold;
 }
 
