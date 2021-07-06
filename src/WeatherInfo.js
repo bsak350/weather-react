@@ -18,7 +18,7 @@ export default function WeatherInfo(props) {
             />
           </div>
         </div>
-        <div className="col-sm-5 mt-3">
+        <div className="col-sm-5 mt-3 temp">
           <WeatherTemp imperial={props.data.temperature} />
         </div>
         <div className="col-sm-8">

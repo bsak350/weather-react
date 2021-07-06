@@ -30,9 +30,3 @@
 .App .links {
   color: lightgreen;
 }
-
-@media (max-width: 900px) {
-  h2 {
-    text-align: left;
-  }
-}
